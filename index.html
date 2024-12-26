@@ -19,6 +19,8 @@
             padding: 0;
             line-height: 1.6;
             background: linear-gradient(135deg, #7B2FF7, #FF2A68, #FF8C00); /* Purple, Pink, and Orange Gradient */
+            background-attachment: fixed;
+            background-size: cover;
             color: #333; /* Dark text for readability */
             height: 100vh;
             display: flex;
@@ -28,7 +30,9 @@
 
         /* Gradient Background for Header */
         header {
-            background: linear-gradient(135deg, #FF8C00, #FFBB33); /* Peach to Orange Gradient */
+            background: linear-gradient(135deg, #FF8C00, #FFBB33, #FF5722,#7B2FF7);
+            background-attachment: fixed;
+            background-size: cover;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -79,6 +83,7 @@
         main {
             padding: 30px 20px;
             text-align: center;
+            background: transparent;
             background: linear-gradient(135deg, #FF8C00, #FFBB33); /* Peach to Orange Gradient for sections */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin: 20px auto;
@@ -101,7 +106,7 @@
         section {
             padding: 30px;
             margin-bottom: 30px;
-            background: linear-gradient(135deg, #FFB3B3, #FFCC99); /* Peach to Light Orange Gradient */
+            background: linear-gradient(135deg, #FFB3B3, #FFCC99);
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, background-color 0.3s ease;
@@ -226,8 +231,28 @@
         /* Icons styling */
         .icon {
             margin-right: 10px;
-            color: #FF5722;
+            color: skyblue; /* Sky blue color for the icons */
         }
+        /* Ensure the icons in the skills section are the desired color */
+        #skills i {
+             color: #333;  /* Replace with your preferred color */
+            }
+        #skills .fa-laptop-code {
+             color: #4CAF50;  /* Example: green */
+            }
+         #skills .fa-database {
+             color: #2196F3;  /* Example: blue */
+            }
+        #skills .fa-chart-line {
+             color: #FF5722;  /* Example: orange */
+            }
+        #skills .fa-chart-pie {
+             color: #FFC107;  /* Example: yellow */
+            }
+        #skills .fa-brain {
+             color: #9C27B0;  /* Example: purple */
+            }
+
 
         /* Keyframe Animations */
         @keyframes fadeIn {
@@ -357,5 +382,5 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Daroor Pavan Kalyan | Designed by Me</p>
+        <p>&copy; 2024 Daroor Pavan Kalyan. All rights reserved.</p>
     </footer>
